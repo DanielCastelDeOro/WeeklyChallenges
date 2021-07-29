@@ -33,7 +33,7 @@ namespace ChallengesWithTestsMark8
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            throw new NotImplementedException();
+           throw new NotImplementedException();
 
             var isLower = false;
             var isUpper = false;
@@ -43,15 +43,15 @@ namespace ChallengesWithTestsMark8
             {
                 if (char.IsUpper(password[i]))
                 {
-                    return true;
+                    isUpper = true;
                 }
                 if (char.IsLower(password[i]))
                 {
-                    return true;
+                    isLower = true;
                 }
                 if (char.IsNumber(password[i]))
                 {
-                    return true;
+                    isNumber = true;
                 }
                 if (isLower ==true && isUpper == true && isNumber == true)
                 {
